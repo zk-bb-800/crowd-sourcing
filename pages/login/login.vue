@@ -1,6 +1,6 @@
 <template>
 	<view>
-		登录页
+		登录页test
 	</view>
 </template>
 
