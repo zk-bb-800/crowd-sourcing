@@ -30,6 +30,12 @@
 				"navigationBarTitleText": "管理"
 			}
         }
+        ,{
+            "path" : "pages/im/im",
+            "style" : {
+				"navigationBarTitleText": "消息"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
@@ -47,7 +53,7 @@
 				"text": "项目"
 			},
 			{
-				"pagePath": "pages/detail/detail",
+				"pagePath": "pages/im/im",
 				"text": "消息"
 			},
 			{
