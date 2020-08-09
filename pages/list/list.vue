@@ -1,6 +1,6 @@
 <template>
 	<view>
-		 <scroll-view class="scroll-view_H" scroll-x="true" @scroll="" scroll-left="120">
+<!-- 		 <scroll-view class="scroll-view_H" scroll-x="true" @scroll="" scroll-left="120">
 			<view id="demo1" class="scroll-view-item_H uni-bg-red xhx">
 				<navigator url="../login/login">
 					<text>首页</text>
@@ -14,40 +14,50 @@
 			</view><view id="demo1" class="scroll-view-item_H uni-bg-red">
 				标签5
 			</view>
-		</scroll-view>
-		<view class="scroll-view-item_H">
-			<view class="scroll-view-item_H uni-bg-red">A</view>
-			<view class="scroll-view-item_H uni-bg-green">B</view>
-			<view class="scroll-view-item_H uni-bg-blue">C</view>
+		</scroll-view> -->
+		<view class="scroll-view_H">
+			<view class="scroll-view-item_H uni-bg-red xhx">
+				<navigator url="../login/login">
+					<text>ps</text>
+				</navigator>
+			</view>
+			<view class="scroll-view-item_H uni-bg-green">Excel</view>
+			<view class="scroll-view-item_H uni-bg-blue">Word</view>
+			<view class="scroll-view-item_H uni-bg-blue">...</view>
 		</view>
 		<view class="search-block">
 			<text class="ybj">推荐</text>
 			<text>更新</text>
 		</view>
-		<!-- <view class="search-block">
-			<view class="search-ico-wapper">
-				<icon type="search" size="26"/>
-			</view>
-			<input type="text" value="" placeholder="点击输入搜索内容" class="search-text" maxlength="10" focus/>
-		</view> -->
 		<view class="uni-flex uni-column xqylbbj">
-			<view class="flex-item flex-item-V uni-bg-red xqylb">
-				<navigator url="../detail/detail">
-					详情页
-				</navigator>
-			</view>
-			<view class="flex-item flex-item-V uni-bg-green xqylb">
-				列表项1
-			</view>
-			<view class="flex-item flex-item-V uni-bg-blue xqylb">
-				列表项2
-			</view>
+			<uni-card 
+			    title="制作一份海报" 
+				:mode="title"
+			    :is-shadow="true" 
+			    extra="截止日期:2020-08-09" 
+			    note="Tips"
+				v-for="n in 3"
+				:key="n"
+				@click="test"
+			>
+			   <text class="list-content-font">我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容</text>
+			   <template v-slot:footer>
+					<view class="tag-list">
+						<uni-tag text="标签1" type="primary" :inverted="true" class="tag-style"></uni-tag>
+						<uni-tag text="标签2" type="primary" :inverted="true" class="tag-style"></uni-tag>
+				   </view>
+					<text class="list-float-rmb">￥100</text>
+			   </template>
+			</uni-card>
 		</view>
 	</view>
 </template>
 
 <script>
+	import uniTag from "@/components/uni-tag/uni-tag.vue"
+	import uniCard from '@/components/uni-card/uni-card.vue'
 	export default {
+		components: {uniTag, uniCard},
 		data() {
 			return {
 				scrollTop: 0,
@@ -60,6 +70,11 @@
 			scroll: function(e) {
 				console.log(e)
 				this.old.scrollTop = e.detail.scrollTop
+			},
+			test() {
+				uni.navigateTo({
+				    url: '/pages/detail/detail'
+				});
 			}
 		}
 	}
@@ -71,6 +86,45 @@
 		background-color: #F4F5F6;
 	}
 	
+	.list-content-font {
+		font-size: 14px;
+	}
+	
+	.tag-list {
+		display: flex;
+	}
+	
+	.tag-style {
+		width: 40px;
+		margin-right: 5px;
+	}
+	
+	.list-content {
+		display: flex;
+		text-indent: 2em;
+	}
+
+	.list-content-text {
+		margin: 10px;
+	}
+
+	.list-content-xin {
+		line-height: 70px;
+		margin: 0 10px;
+		color: red;
+		font-size: 30px;
+	}
+	
+	.list-title-time {
+		float: right;
+		font-size: 15px;
+	}
+	
+	.list-float-rmb {
+		float: right;
+		color: #FF0000;
+	}
+	
 	.topnav {
 		display: flex;
 	}
@@ -80,11 +134,11 @@
 	}
 	
 	.xqylbbj {
-		margin: 0 10px;
+		/* margin: 0 10px; */
 	}
 	
 	.xqylb {
-		border-bottom: 1px dashed;
+		/* border-bottom: 1px dashed; */
 		background-color: #fff;
 		margin-top: 15px;
 	}

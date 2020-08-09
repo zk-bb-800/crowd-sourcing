@@ -2,7 +2,7 @@
 	"pages": [{
 		"path" : "pages/login/login",
 		"style" : {
-			"navigationBarTitleText": "2006众包平台"
+			"navigationBarTitleText": "58接活帮"
 		}
     },{
 		"path": "pages/index/index",
@@ -12,12 +12,12 @@
 	},{
 		"path" : "pages/list/list",
 		"style" : {
-			"navigationBarTitleText": "列表页"
+			"navigationBarTitleText": "项目列表"
 		}
     },{
 		"path" : "pages/detail/detail",
 		"style" : {
-			"navigationBarTitleText": "详情页"
+			"navigationBarTitleText": "项目详情"
 		}
     },{
             "path" : "pages/my/my",
@@ -28,6 +28,24 @@
             "path" : "pages/manage/manage",
             "style" : {
 				"navigationBarTitleText": "管理"
+			}
+        }
+        ,{
+            "path" : "pages/guide/guide",
+            "style" : {
+				"navigationBarTitleText": "引导页1"
+			}
+        }
+        ,{
+            "path" : "pages/guide2/guide2",
+            "style" : {
+				"navigationBarTitleText": "引导页2"
+			}
+        }
+        ,{
+            "path" : "pages/im/im",
+            "style" : {
+				"navigationBarTitleText": "消息"
 			}
         }
     ],
@@ -47,7 +65,7 @@
 				"text": "项目"
 			},
 			{
-				"pagePath": "pages/detail/detail",
+				"pagePath": "pages/im/im",
 				"text": "消息"
 			},
 			{

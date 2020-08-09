@@ -19,10 +19,10 @@
 					</label>
 				</radio-group>
 			</view> -->
-			<navigator url="../list/list">
+			<navigator url="../guide/guide">
 				<button form-type="submit">登录</button>
 			</navigator>
-			<button form-type="submit">注册</button>
+			<button form-type="submit" style="margin-top: 15px;">注册</button>
 		</form>
 	</view>
 </template>
@@ -55,6 +55,7 @@
 	}
 	
 	.login-form {
+		margin-top: 20px;
 		padding: 20px;
 	}
 </style>

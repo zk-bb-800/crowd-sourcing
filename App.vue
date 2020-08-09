@@ -20,4 +20,8 @@ export default {
 	src: url('/static/uni.ttf');
 }
 /* #endif */
+
+	page {
+		background-color: #F4F5F6;
+	}
 </style>
