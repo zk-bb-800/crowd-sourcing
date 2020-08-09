@@ -1,10 +1,10 @@
 <template>
 	<view class="ydy1-list">
 		<navigator url="../guide2/guide2">
-			<uni-tag text="技能1" type="warning" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+			<uni-tag text="设计类" type="warning" :circle="true" :inverted="true" class="list-tag"></uni-tag>
 		</navigator>
-		<uni-tag text="技能2" type="success" :circle="true" :inverted="true" class="list-tag"></uni-tag>
-		<uni-tag text="技能3" type="primary" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="文案类" type="success" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="IT类" type="primary" :circle="true" :inverted="true" class="list-tag"></uni-tag>
 	</view>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<uni-notice-bar single="true" text="这是通告栏，成为会员balabalabalabalabalabala..."></uni-notice-bar>
+		<uni-notice-bar single="true" text="这是通告栏，成为会员balabalabalabalabalabala........  >"></uni-notice-bar>
 		<view class="ss">
 			<uni-fav
 				:checked="checked" 

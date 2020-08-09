@@ -1,25 +1,25 @@
 <template>
 	<view class="ydy2-list">
 		
-		<uni-tag text="技能1" type="warning" :circle="true" :inverted="true" class="list-tag" @click="bindClick"></uni-tag>
-		<uni-tag text="技能2" type="error" :circle="true" :inverted="true" class="list-tag"></uni-tag>
-		<uni-tag text="技能3" type="primary" :circle="true" :inverted="true" class="list-tag"></uni-tag>
-		<uni-tag text="技能4" type="success" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="视频制作" type="warning" :circle="true" :inverted="true" class="list-tag" @click="bindClick"></uni-tag>
+		<uni-tag text="平面设计" type="error" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="photoShop" type="primary" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="logo设计" type="success" :circle="true" :inverted="true" class="list-tag"></uni-tag>
 		
-		<uni-tag text="技能1" type="warning" :circle="true" :inverted="true" class="list-tag"></uni-tag>
-		<uni-tag text="技能2" type="error" :circle="true" :inverted="true" class="list-tag"></uni-tag>
-		<uni-tag text="技能2" type="primary" :circle="true" :inverted="true" class="list-tag"></uni-tag>
-		<uni-tag text="技能2" type="success" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="视频编辑" type="warning" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="影视特效" type="error" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="3D动画" type="primary" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="技能" type="success" :circle="true" :inverted="true" class="list-tag"></uni-tag>
 		
-		<uni-tag text="技能2" type="warning" :circle="true" :inverted="true" class="list-tag"></uni-tag>
-		<uni-tag text="技能2" type="error" :circle="true" :inverted="true" class="list-tag"></uni-tag>
-		<uni-tag text="技能2" type="primary" :circle="true" :inverted="true" class="list-tag"></uni-tag>
-		<uni-tag text="技能2" type="success" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="技能" type="warning" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="技能" type="error" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="技能" type="primary" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="技能" type="success" :circle="true" :inverted="true" class="list-tag"></uni-tag>
 		
-		<uni-tag text="技能2" type="warning" :circle="true" :inverted="true" class="list-tag"></uni-tag>
-		<uni-tag text="技能2" type="error" :circle="true" :inverted="true" class="list-tag"></uni-tag>
-		<uni-tag text="技能2" type="primary" :circle="true" :inverted="true" class="list-tag"></uni-tag>
-		<uni-tag text="技能2" type="success" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="技能" type="warning" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="技能" type="error" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="技能" type="primary" :circle="true" :inverted="true" class="list-tag"></uni-tag>
+		<uni-tag text="技能" type="success" :circle="true" :inverted="true" class="list-tag"></uni-tag>
 		
 	</view>
 </template>

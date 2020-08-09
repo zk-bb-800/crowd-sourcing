@@ -49,6 +49,7 @@
 			<uni-list-item  title="我的资产" />
 			<uni-list-item  title="我的客服" />
 			<uni-list-item  title="帮助与反馈" />
+			<uni-list-item  title="退出" @click="tc" />
 		</uni-list>
 	</view>
 </template>
@@ -67,7 +68,11 @@
 			}
 		},
 		methods: {
-			
+			tc() {
+				uni.navigateTo({
+					url: '/pages/login/login'
+				});
+			}
 		}
 	}
 </script>

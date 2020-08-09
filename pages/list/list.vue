@@ -17,12 +17,10 @@
 		</scroll-view> -->
 		<view class="scroll-view_H">
 			<view class="scroll-view-item_H uni-bg-red xhx">
-				<navigator url="../login/login">
-					<text>ps</text>
-				</navigator>
+				<text>视频制作</text>
 			</view>
-			<view class="scroll-view-item_H uni-bg-green">Excel</view>
-			<view class="scroll-view-item_H uni-bg-blue">Word</view>
+			<view class="scroll-view-item_H uni-bg-green">平面设计</view>
+			<view class="scroll-view-item_H uni-bg-blue">photoShop</view>
 			<view class="scroll-view-item_H uni-bg-blue">...</view>
 		</view>
 		<view class="search-block">
@@ -31,8 +29,8 @@
 		</view>
 		<view class="uni-flex uni-column xqylbbj">
 			<uni-card 
-			    title="制作一份海报" 
-				:mode="title"
+			    title="制作一个视频" 
+				mode="basic"
 			    :is-shadow="true" 
 			    extra="截止日期:2020-08-09" 
 			    note="Tips"
@@ -46,7 +44,7 @@
 						<uni-tag text="标签1" type="primary" :inverted="true" class="tag-style"></uni-tag>
 						<uni-tag text="标签2" type="primary" :inverted="true" class="tag-style"></uni-tag>
 				   </view>
-					<text class="list-float-rmb">￥100</text>
+					<text class="list-float-rmb">￥1000</text>
 			   </template>
 			</uni-card>
 		</view>
