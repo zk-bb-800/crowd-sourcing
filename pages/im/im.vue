@@ -48,7 +48,6 @@
 					return data.substring(0, fontLength) + '...'
 				}
 			}
-
 		}
 	}
 </script>
@@ -106,7 +105,6 @@
 	.contenPDetail {
 		color: #646566;
 	}
-
 
 	.time {
 		width: 40px;
