@@ -2,21 +2,23 @@
 	<view class="container">
 		<view class="imList" v-for="(item, index) in listData" :key="item.mId">
 			<view class="itemLeft">
-				head
+				<img :src="item.uHead">
 			</view>
-			<view class="content">
-				<view class="contentUName">
-					{{item.uName}}
+			<view class="itemMiddle">
+				<view class="mContent">
+					<view class="contentUName">
+						{{item.uName}}
+					</view>
+					<view class="contentPName">
+						{{item.pName}}
+					</view>
+					<view class="contenPDetail">
+						{{ item.pDetail | detailFilter(item.pDetail)}}
+					</view>
 				</view>
-				<view class="contentPName">
-					{{item.pName}}
+				<view class="time">
+					{{item.time}}
 				</view>
-				<view class="contenPDetail">
-					{{item.pDetail}}
-				</view>
-			</view>
-			<view class="time">
-				{{item.time}}
 			</view>
 		</view>
 
@@ -33,23 +35,66 @@
 		},
 		methods: {
 
+		},
+		filters: {
+			detailFilter(data) {
+				const fontLength = 15;
+				if (data.length > fontLength) {
+					return data.substring(0, fontLength) + '...'
+				}
+			}
+
 		}
 	}
 </script>
 
 <style>
 	.container {
-		padding: 20px;
+		padding: 15px;
 		font-size: 14px;
 	}
 
 	.imList {
 		display: flex;
-		/* height:80px; */
-		border-bottom: #3F536E 1px solid;
+		padding-top: 5px;
 	}
-	.content {
+
+	/* 列表项 */
+	.itemLeft {
+		width: 60px;
+		height: 60px;
+		overflow: hidden;
+		border: #3F536E 1px solid;
+		position: relative;
+	}
+	img {
+		height: 80px;
+	}
+
+	.itemMiddle {
 		flex: 1;
-		padding: 0 10px;
+		display: flex;
+		padding: 5px 0 5px 10px;
+		border-bottom: #dcdcdc 1px solid;
+	}
+	.imList:last-child .itemMiddle {
+		border-bottom: 0px;
+	}
+
+	.mContent {
+		flex: 1;
+	}
+	.contentUName {
+		font-size: 16px;
+		font-weight: 600;
+		color: #3B4144
+	}
+	.contentPName, .contenPDetail {
+		color: #646566;
+	}
+
+
+	.time {
+		width: 40px;
 	}
 </style>
