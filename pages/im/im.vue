@@ -8,6 +8,7 @@
 				<view class="mContent">
 					<view class="contentUName">
 						{{item.uName}}
+						<uni-tag :text="item.state" size="small" type="primary"></uni-tag>
 					</view>
 					<view class="contentPName">
 						{{item.pName}}
@@ -26,12 +27,16 @@
 </template>
 
 <script>
+	import uniTag from "@/components/uni-tag/uni-tag.vue"
 	const imListData = require("../../static/json/imList.json");
 	export default {
 		data() {
 			return {
 				listData: imListData.imList,
 			}
+		},
+		components: {
+			uniTag
 		},
 		methods: {
 
@@ -67,8 +72,12 @@
 		border: #3F536E 1px solid;
 		position: relative;
 	}
+
 	img {
 		height: 80px;
+	}
+	.imList:last-child .itemMiddle {
+		border-bottom: 0px;
 	}
 
 	.itemMiddle {
@@ -77,19 +86,24 @@
 		padding: 5px 0 5px 10px;
 		border-bottom: #dcdcdc 1px solid;
 	}
-	.imList:last-child .itemMiddle {
-		border-bottom: 0px;
-	}
 
 	.mContent {
 		flex: 1;
 	}
+
 	.contentUName {
 		font-size: 16px;
 		font-weight: 600;
 		color: #3B4144
 	}
-	.contentPName, .contenPDetail {
+	.uni-tag {
+		padding:0 5px;
+		margin-left: 5px;
+		display: inline-block;
+	}
+
+	.contentPName,
+	.contenPDetail {
 		color: #646566;
 	}
 
